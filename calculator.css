@@ -4,17 +4,7 @@ h2{
     animation:Move 5s ease-in-out infinite;
 }
 
-@keyframes Move{
-    from{
-        transform:translateY(-10px);
-        color:lightblue; 
-    }
-    to{
-        transform:translateY(10px);
-        color:greenyellow;
-    } 
-     
-}
+
 
 #result{
     background-color:rgb(85, 85, 83);
@@ -32,7 +22,7 @@ h2{
     width:50px;
    border-radius: 4px;
    background-color:rgb(102, 103, 103);
-    color:rgb(62, 63, 65);
+    color:rgb(0, 0, 0);
      font-size:larger;
     margin: 2px;
      cursor: pointer;

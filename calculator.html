@@ -6,40 +6,47 @@
     </head>
 
     <body>
+
+        <fieldset>
         <div id="container">
         <h2>Calculator</h2>
         <br>
         <div id="display">
             <input type="text"  placeholder="0" id="result" readonly >
         </div>
-            <br><br>
-        <div id="button">
+            <br>
+        <div id="btn">
             <button onclick="clearDisplay('AC')">AC</button>
             <button onclick="oneclearDisplay('C')">C</button>
-            <button onclick="Toclickbutton('+')">+</button>
-             <button onclick="Toclickbutton('-')">-</button>
-              <button onclick="Toclickbutton('*')">*</button>
-            <button onclick="Toclickbutton('/')">/</button>
             <button onclick="Toclickbutton('%')">%</button>
-            <button onclick="calculator('=')">=</button>
-            <button onclick="Toclickbutton('1')">1</button>
-            
+            <button onclick="Toclickbutton('+')">+</button>
+
+             <button onclick="Toclickbutton('1')">1</button>
             <button onclick="Toclickbutton('2')">2</button>
             <button onclick="Toclickbutton('3')">3</button>
-            <button onclick="Toclickbutton('4')">4</button>
-            
+             <button onclick="Toclickbutton('-')">-</button>
+
+            <button onclick="Toclickbutton('4')">4</button>   
             <button onclick="Toclickbutton('5')">5</button>
             <button onclick="Toclickbutton('6')">6</button>
+              <button onclick="Toclickbutton('*')">*</button>
+
             <button onclick="Toclickbutton('7')">7</button>
             <button onclick="Toclickbutton('8')">8</button>
-           
             <button onclick="Toclickbutton('9')">9</button>
+            <button onclick="Toclickbutton('/')">/</button>
             <button onclick="Toclickbutton('0')">0</button>
+            
+        
+            <button onclick="calculator('=')">=</button>
+           
+           
+            
            
         </div>
 
         </div>
-
+        </fieldset>
         <script>
 
             const display= document.getElementById('result');

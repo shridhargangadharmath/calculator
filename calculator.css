@@ -1,3 +1,7 @@
+body{
+    background: linear-gradient(to right, #edaeb1 0%, #b5f0fc 100%);
+}
+
 h2{
     color:rgb(25, 58, 91);
     text-align: center;

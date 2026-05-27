@@ -1,17 +1,17 @@
-* {
+
+html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
 }
 
 body{
-    background: linear-gradient(to right, #edaeb1 0%, #b5f0fc 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 10px;
-    font-family: Arial, sans-serif;
+    overflow: hidden;
+    position: relative;
 }
 
 h2{
@@ -64,12 +64,14 @@ h2{
 }
 
 fieldset{
-    width: 100%;
-    max-width: 400px;
+    width: 110%;
+    max-width: 450px;
     background:linear-gradient(to right, #818282 0%, #9db8b8 100%);
     border-radius: 10px;
     border: 4px solid #0077ff;
     padding: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 #display {
@@ -84,7 +86,7 @@ fieldset{
 @media (max-width: 600px) {
     fieldset {
         max-width: 100%;
-        padding: 15px;
+        padding: 30px;
     }
     
     #btn button {
@@ -95,6 +97,7 @@ fieldset{
     #result {
         min-height: 50px;
         font-size: 1.1rem;
+        font-weight: bold;
     }
 }
 
@@ -104,4 +107,19 @@ fieldset{
         max-width: 420px;
     }
 
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#container{
+    padding: 20px;
+    border-radius: 15px;
 }
